@@ -1,0 +1,30 @@
+{
+  "name": "web-feeds-graphql",
+  "version": "0.1.0",
+  "description": "Query web feeds (RSS, Atom, and RDF) with GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adieuadieu/web-feeds-graphql.git"
+  },
+  "keywords": [
+    "rss",
+    "arom",
+    "rdf",
+    "web",
+    "feeds",
+    "graphql",
+    "query",
+    "object",
+    "type"
+  ],
+  "author": "Marco Lüthy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adieuadieu/web-feeds-graphql/issues"
+  },
+  "homepage": "https://github.com/adieuadieu/web-feeds-graphql"
+}
