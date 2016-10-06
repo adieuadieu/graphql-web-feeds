@@ -12,10 +12,11 @@
   },
   "keywords": [
     "rss",
-    "arom",
+    "atom",
     "rdf",
     "web",
     "feeds",
+    "syndication",
     "graphql",
     "query",
     "object",
@@ -26,5 +27,17 @@
   "bugs": {
     "url": "https://github.com/adieuadieu/web-feeds-graphql/issues"
   },
-  "homepage": "https://github.com/adieuadieu/web-feeds-graphql"
+  "homepage": "https://github.com/adieuadieu/web-feeds-graphql",
+  "dependencies": {
+    "feedparser": "1.1.5",
+    "graphql": "0.7.1",
+    "iconv": "2.2.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.1.0"
+  },
+  "files": [
+    "src"
+  ]
 }

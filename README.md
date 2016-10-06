@@ -1,5 +1,13 @@
 # Web Feeds GraphQL
-Reconsiling old shit with new shit; Query Web Feeds (RSS, Atom, and RDF) with GraphQL
+Reconsiling old shit with new shit; Query web feeds (RSS, Atom, and RDF) with GraphQL
+
+[![npm package](https://img.shields.io/npm/v/web-feeds-graphql.svg?style=flat-square)](https://www.npmjs.org/package/web-feeds-graphql)
+[![Build Status](https://travis-ci.org/adieuadieu/web-feeds-graphql.svg?branch=master)](https://travis-ci.org/adieuadieu/web-feeds-graphql)
+[![Coverage Status](https://coveralls.io/repos/github/adieuadieu/web-feeds-graphql/badge.svg?branch=master)](https://coveralls.io/github/adieuadieu/web-feeds-graphql?branch=master)
+
+[![PeerDependencies](https://img.shields.io/david/peer/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql#info=peerDependencies&view=list)
+[![Dependencies](https://img.shields.io/david/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql)
+[![DevDependencies](https://img.shields.io/david/dev/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql#info=devDependencies&view=list)
 
 ## Why?
 
@@ -43,3 +51,8 @@ import { RssObjectType } from 'web-feeds-graphql';
 
 
 https://github.com/danmactough/node-feedparser
+
+https://github.com/danmactough/node-feedparser/blob/master/examples/iconv.js
+
+
+https://github.com/avajs/ava
