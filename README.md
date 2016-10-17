@@ -9,6 +9,11 @@ Reconsiling old shit with new shit; Query web feeds (RSS, Atom, and RDF) with Gr
 [![Dependencies](https://img.shields.io/david/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql)
 [![DevDependencies](https://img.shields.io/david/dev/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql#info=devDependencies&view=list)
 
+## Features
+
+[ ] cache
+[ ] aggregate mutliple feeds into on, sorted by date (at the detriment of speed)
+
 ## Why?
 
 tl;dr: XML is icky. JSON is neato. GraphQL is neato-ier.
