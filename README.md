@@ -11,7 +11,7 @@ Reconsiling old shit with new shit; Query web feeds (RSS, Atom, and RDF) with Gr
 
 ## Features
 
-[ ] cache
+[ ] cache (just use API Gateway's cache?)
 [ ] aggregate mutliple feeds into on, sorted by date (at the detriment of speed)
 
 ## Why?

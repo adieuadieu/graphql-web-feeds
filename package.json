@@ -4,8 +4,9 @@
   "description": "Query web feeds (RSS, Atom, and RDF) with GraphQL",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
-    "watch:test": "ava --watch"
+    "test": "standard && ava",
+    "watch:test": "ava --watch",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -37,8 +38,10 @@
   },
   "devDependencies": {
     "ava": "0.16.0",
+    "babel-eslint": "7.0.0",
     "eslint": "3.8.0",
-    "eslint-plugin-ava": "3.1.1"
+    "eslint-plugin-ava": "3.1.1",
+    "standard": "8.4.0"
   },
   "files": [
     "src"
@@ -47,9 +50,15 @@
     "babel": "inherit"
   },
   "eslintConfig": {
+    "env": {
+      "node": true
+    },
     "plugins": [
       "ava"
     ],
     "extends": "plugin:ava/recommended"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
