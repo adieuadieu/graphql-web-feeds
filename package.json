@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adieuadieu/web-feeds-graphql.git"
+    "url": "https://github.com/adieuadieu/graphql-web-feeds.git"
   },
   "keywords": [
     "rss",
@@ -27,9 +27,9 @@
   "author": "Marco Lüthy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adieuadieu/web-feeds-graphql/issues"
+    "url": "https://github.com/adieuadieu/graphql-web-feeds/issues"
   },
-  "homepage": "https://github.com/adieuadieu/web-feeds-graphql",
+  "homepage": "https://github.com/adieuadieu/graphql-web-feeds",
   "dependencies": {
     "feedparser": "1.1.5",
     "graphql": "0.7.1",
