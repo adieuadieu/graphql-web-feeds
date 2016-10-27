@@ -1,63 +1,79 @@
-# Web Feeds GraphQL
-Reconsiling old shit with new shit; Query web feeds (RSS, Atom, and RDF) with GraphQL
+# GraphQL Web Feeds
+Reconciling old shit with new shit; Query web feeds (RSS, Atom, and RDF) with GraphQL
 
-[![npm package](https://img.shields.io/npm/v/web-feeds-graphql.svg?style=flat-square)](https://www.npmjs.org/package/web-feeds-graphql)
-[![Build Status](https://travis-ci.org/adieuadieu/web-feeds-graphql.svg?branch=master)](https://travis-ci.org/adieuadieu/web-feeds-graphql)
-[![Coverage Status](https://coveralls.io/repos/github/adieuadieu/web-feeds-graphql/badge.svg?branch=master)](https://coveralls.io/github/adieuadieu/web-feeds-graphql?branch=master)
+## Contents
+1. [What is it?](#what-is-it)
+1. [Try it](#try-it)
+1. [Installation](#installation)
+1. [Querying](#querying)
+1. [Configuration](#configuration)
+1. [Testing](#testing)
+1. [Troubleshooting](#troubleshooting)
 
-[![PeerDependencies](https://img.shields.io/david/peer/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql#info=peerDependencies&view=list)
-[![Dependencies](https://img.shields.io/david/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql)
-[![DevDependencies](https://img.shields.io/david/dev/adieuadieu/web-feeds-graphql.svg?style=flat-square)](https://david-dm.org/adieuadieu/web-feeds-graphql#info=devDependencies&view=list)
+## What is it?
 
-## Features
+Sometimes you gotta make use of an RSS/Atom/RDF web feed. `graphql-web-feeds` aims to make it easy to do that in your GraphQL API.
 
-[ ] cache (just use API Gateway's cache?)
-[ ] aggregate mutliple feeds into on, sorted by date (at the detriment of speed)
+## Try it
 
-## Why?
+Demo Todo :-(
 
-tl;dr: XML is icky. JSON is neato. GraphQL is neato-ier.
+## Features / Roadmap-todo
 
-Sometimes you're forced to reconsile the old with the new and here I've stumbled upon such a case that no one else has already solved for me :-(. Given that JSON is a thing, working with RSS/Atom is about as much fun as Myspace. But, when a client says, "Hey, I want you to display my friend Joe McBobberface's RSS feed on my spanking new GraphQL-backed app!" I roll my eyes and try to remember the last time I heard of/used/saw/thought about RSS (I dunno; maybe 5 years ago?) This project snowballed out of my attempt to reconsile said clients desire to display his friends RSS feed with trying to minimise the attack on the beauty of the app I've created for them.
+- [ ] make it do something
+- [ ] cache
+- [ ] aggregate multiple feeds into one, sorted by date (at the detriment of speed)
+- [ ] offer an Atom/RDF/RSS Interface type ?
 
-## How
+## Installation
+
+The package makes the assumption that, because you're using GraphQL, you're probably also using ES6+ and therefore your project handles any necessary transpilation, when required.
+
+First, install the package:
+
+```bash
+npm install graphql-web-feeds --save
+```
+
+Then, add it to your project's GraphQL schema:
+
+```js
+import { RssObjectType } from 'web-feeds-graphql';
 
 ```
-npm install web-feeds-graphql
-```
 
+## Querying
 
 ```graphql
 query {
   waitButWhy: feed(url: "http://waitbutwhy.com/feed") {
-    channel {
+    title
+    link
+    description
+    items {
       title
       link
       description
-      items {
-        title
-        link
-        description
-      }
     }
   }
 }
 ```
 
-feed object type
-union of rss or atom
+## Configuration
 
-```js
-import { RssObjectType } from 'web-feeds-graphql';
+Todo
 
+## Testing
 
-
+```bash
+git clone https://github.com/adieuadieu/graphql-web-feeds.git
+cd graphql-web-feeds
+npm test
 ```
 
+## FAQ / Troubleshooting
 
-https://github.com/danmactough/node-feedparser
-
-https://github.com/danmactough/node-feedparser/blob/master/examples/iconv.js
-
-
-https://github.com/avajs/ava
+<details>
+  <summary>Todo?</summary>
+  Todo.
+</details>

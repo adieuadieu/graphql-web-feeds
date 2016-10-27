@@ -2,9 +2,9 @@
   "name": "graphql-web-feeds",
   "version": "0.1.0",
   "description": "Query web feeds (RSS, Atom, and RDF) with GraphQL",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "standard && ava",
+    "test": "npm run lint && ava",
     "watch:test": "ava --watch",
     "lint": "standard"
   },
