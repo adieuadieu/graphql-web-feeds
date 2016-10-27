@@ -63,7 +63,38 @@ query {
 }
 ```
 
-More advanced:
+Single, default feed:
+
+
+```js
+import { GraphQLSchema } from 'graphql/type'
+import { feedTypeFactory } from 'web-feeds-graphql'
+
+const feedUrl = 'http://waitbutwhy.com/feed'
+const field = feedTypeFactory(feedUrl)
+
+const schema = GraphQLSchema({
+  query: field,
+})
+```
+
+```graphql
+query {
+  feed {
+    title
+    link
+    description
+    items {
+      title
+      link
+      description
+    }
+  }
+}
+```
+
+
+With cache and selected feeds:
 
 ```js
 import { GraphQLSchema } from 'graphql/type'
