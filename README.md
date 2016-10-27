@@ -38,8 +38,64 @@ npm install graphql-web-feeds --save
 Then, add it to your project's GraphQL schema:
 
 ```js
-import { RssObjectType } from 'web-feeds-graphql';
+import { GraphQLSchema } from 'graphql/type'
+import { feedTypeFactory } from 'web-feeds-graphql'
 
+const simpleField = feedTypeFactory()
+
+const schema = GraphQLSchema({
+  query: simpleField,
+})
+```
+
+```graphql
+query {
+  waitButWhy: feed(url: "http://waitbutwhy.com/feed") {
+    title
+    link
+    description
+    items {
+      title
+      link
+      description
+    }
+  }
+}
+```
+
+More advanced:
+
+```js
+import { GraphQLSchema } from 'graphql/type'
+import { S3Cache } from 'web-feeds-graphql/cache'
+import { feedTypeFactory } from 'web-feeds-graphql'
+
+const cache = new S3Cache({ secret, accesskey, ttl: true, ..etc })
+const feeds = {
+  waitButWhy: 'http://waitbutwhy.com/feed',
+  spacex: 'http://www.space.com/home/feed/site.xml',
+}
+const field = feedTypeFactory(feeds, cache)
+
+const schema = GraphQLSchema({
+  query: field,
+})
+```
+
+
+```graphql
+query {
+  waitButWhy: feed(name: waitButWhy) {
+    title
+    link
+    description
+    items {
+      title
+      link
+      description
+    }
+  }
+}
 ```
 
 ## Querying
@@ -62,6 +118,16 @@ query {
 ## Configuration
 
 Todo
+
+## Custom Caches
+
+Todo
+
+Cache must be an object exposing two methods: `get` and `set`
+
+stream get(feedUrl)
+
+async set(feedUrl, feedStream)
 
 ## Testing
 
