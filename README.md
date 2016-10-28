@@ -22,7 +22,7 @@ Demo Todo :-(
 
 - [ ] make it do something
 - [ ] cache
-- [ ] aggregate multiple feeds into one, sorted by date (at the detriment of speed)
+- [ ] aggregate multiple feeds into one, sorted by date (at the detriment of speed?)
 - [ ] offer an Atom/RDF/RSS Interface type ?
 
 ## Installation
@@ -150,7 +150,7 @@ query {
 
 Todo
 
-## Custom Caches
+## Custom Feed Caches
 
 Todo
 
