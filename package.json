@@ -1,0 +1,63 @@
+{
+  "name": "graphql-web-feeds",
+  "version": "0.1.0",
+  "description": "Query web feeds (RSS, Atom, and RDF) with GraphQL",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run lint && ava",
+    "watch:test": "ava --watch",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adieuadieu/graphql-web-feeds.git"
+  },
+  "keywords": [
+    "rss",
+    "atom",
+    "rdf",
+    "web",
+    "feeds",
+    "syndication",
+    "graphql",
+    "query",
+    "object",
+    "type"
+  ],
+  "author": "Marco Lüthy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adieuadieu/graphql-web-feeds/issues"
+  },
+  "homepage": "https://github.com/adieuadieu/graphql-web-feeds",
+  "dependencies": {
+    "feedparser": "1.1.5",
+    "graphql": "0.7.2",
+    "iconv": "2.2.1",
+    "request": "2.76.0"
+  },
+  "devDependencies": {
+    "ava": "0.16.0",
+    "babel-eslint": "7.1.0",
+    "eslint": "3.8.1",
+    "eslint-plugin-ava": "3.1.1"
+  },
+  "files": [
+    "src"
+  ],
+  "ava": {
+    "babel": "inherit"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "plugins": [
+      "ava"
+    ],
+    "extends": "plugin:ava/recommended"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}

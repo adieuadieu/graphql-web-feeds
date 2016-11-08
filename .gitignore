@@ -1,0 +1,11 @@
+.idea/
+node_modules/
+dist/
+*.iml
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+awsconfig.json
+npm-debug.log
+**/config/index.js
+dump/
