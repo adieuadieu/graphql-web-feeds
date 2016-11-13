@@ -21,7 +21,7 @@ Demo Todo :-(
 ## Features / Roadmap-todo
 
 - [ ] make it do something
-- [ ] cache
+- [ ] S3 cache, use S3 expiration to expire based on RSS TTL
 - [ ] aggregate multiple feeds into one, sorted by date (at the detriment of speed?)
 - [ ] offer an Atom/RDF/RSS Interface type ?
 
