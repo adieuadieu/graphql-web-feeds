@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/adieuadieu/graphql-web-feeds",
   "dependencies": {
-    "feedparser": "^2.0.0",
+    "feedparser": "^2.1.0",
     "graphql": "^0.8.2",
     "iconv": "2.2.1",
     "request": "^2.79.0"

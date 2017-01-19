@@ -1481,9 +1481,9 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-feedparser@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/feedparser/-/feedparser-2.0.0.tgz#1b7701417a90f71defc1c5717b51e021ce94b602"
+feedparser@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/feedparser/-/feedparser-2.1.0.tgz#4cd98bf04e18db5b8644f91e98da89dd179f1fe7"
   dependencies:
     addressparser "^1.0.1"
     array-indexofobject "~0.0.1"
